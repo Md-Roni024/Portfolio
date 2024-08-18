@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-
 const Button = styled.button`
-    // display: none;
     width: 100%;
     padding: 10px;
     background-color: ${({ theme }) => theme.white};
@@ -14,7 +12,15 @@ const Button = styled.button`
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.8s ease-in-out;
+
+    &:hover {
+        background-color: ${({ theme }) => theme.primary};  // Change background on hover
+        color: ${({ theme }) => theme.white};  // Change text color on hover
+        transform: translateY(-2px);  // Add a slight lift effect
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  // Add a shadow on hover
+    }
 `
+
 const Card = styled.div`
     width: 330px;
     height: 490px;
@@ -28,11 +34,13 @@ const Card = styled.div`
     flex-direction: column;
     gap: 14px;
     transition: all 0.5s ease-in-out;
+
     &:hover {
         transform: translateY(-10px);
         box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
         filter: brightness(1.1);
     }
+
     &:hover ${Button} {
         display: block;
     }
@@ -71,6 +79,7 @@ const Details = styled.div`
     gap: 0px;
     padding: 0px 2px;
 `
+
 const Title = styled.div`
     font-size: 20px;
     font-weight: 600;
@@ -94,7 +103,6 @@ const Date = styled.div`
     }
 `
 
-
 const Description = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.white};
@@ -112,6 +120,7 @@ const Members = styled.div`
     align-items: center;
     padding-left: 10px;
 `
+
 const Avatar = styled.img`
     width: 38px;
     height: 38px;
@@ -122,16 +131,17 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `
 
-const ProjectCards = ({project,setOpenModal}) => {
+const ProjectCards = ({ project }) => {
     const handleButtonClick = (projectUrl) => {
         window.open(projectUrl, '_blank');
-      };
+    };
+    
     return (
         <Card>
-            <Image src={project.image}/>
+            <Image src={project.image} />
             <Tags>
                 {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
+                    <Tag key={index}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
@@ -140,13 +150,13 @@ const ProjectCards = ({project,setOpenModal}) => {
                 <Description>{project.description}</Description>
             </Details>
             <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
+                {project.member?.map((member, index) => (
+                    <Avatar key={index} src={member.img} />
                 ))}
             </Members>
             <Button onClick={() => handleButtonClick(project.github)}>Open Project</Button>
         </Card>
-    )
-}
+    );
+};
 
-export default ProjectCards
+export default ProjectCards;

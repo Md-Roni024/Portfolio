@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-
 const Button = styled.button`
-    // display: none;
     width: 100%;
     padding: 10px;
     background-color: ${({ theme }) => theme.white};
@@ -13,8 +11,15 @@ const Button = styled.button`
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: ${({ theme }) => theme.primary}; /* Change this to the color you want on hover */
+        color: ${({ theme }) => theme.white}; /* Adjust the text color on hover */
+        transform: translateY(-3px);
+    }
 `
+
 const Card = styled.div`
     width: 330px;
     height: 490px;
@@ -71,16 +76,16 @@ const Details = styled.div`
     gap: 0px;
     padding: 0px 2px;
 `
+
 const Title = styled.div`
     font-size: 20px;
     font-weight: 600;
-    color: ${({ theme }) => theme.white+90};
+    color: ${({ theme }) => theme.white + 90};
     overflow: hidden;
     display: -webkit-box;
     max-width: 100%;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    overflow: hidden;
     text-overflow: ellipsis;
 `
 
@@ -88,12 +93,11 @@ const Date = styled.div`
     font-size: 12px;
     margin-left: 2px;
     font-weight: 400;
-    color: ${({ theme }) => theme.white+90};
-    @media only screen and (max-width: 768px){
+    color: ${({ theme }) => theme.white + 90};
+    @media only screen and (max-width: 768px) {
         font-size: 10px;
     }
 `
-
 
 const Description = styled.div`
     font-weight: 400;
@@ -112,28 +116,25 @@ const Members = styled.div`
     align-items: center;
     padding-left: 10px;
 `
+
 const Avatar = styled.img`
     width: 38px;
     height: 38px;
     border-radius: 50%;
     margin-left: -10px;
     background-color: ${({ theme }) => theme.white};
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border: 3px solid ${({ theme }) => theme.card};
 `
 
-const CertificatesCards = ({certificate,setOpenModal}) => {
+const CertificatesCards = ({ certificate, setOpenModal }) => {
     const handleButtonClick = (certificateUrl) => {
         window.open(certificateUrl, '_blank');
-      };
+    };
+
     return (
         <Card>
-            <Image src={certificate.image}/>
-            {/* <Tags>
-                {certificate.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
-                ))}
-            </Tags> */}
+            <Image src={certificate.image} />
             <Details>
                 <Title>{certificate.title}</Title>
                 <Date>{certificate.date}</Date>
@@ -141,12 +142,12 @@ const CertificatesCards = ({certificate,setOpenModal}) => {
             </Details>
             <Members>
                 {certificate.member?.map((member) => (
-                    <Avatar src={member.img}/>
+                    <Avatar src={member.img} key={member.img} />
                 ))}
             </Members>
-            <Button onClick={() => handleButtonClick(certificate.link)}>Open Certificate</Button>
+            <Button onClick={() => handleButtonClick(certificate.link)}>Open Credential</Button>
         </Card>
-    )
-}
+    );
+};
 
-export default CertificatesCards
+export default CertificatesCards;

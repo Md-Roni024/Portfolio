@@ -13,7 +13,7 @@ export const Container = styled.div`
     z-index: 1;
     align-items: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%,100% 98%, 0 100%);
-    padding: 80px 0px 60px 0px
+    padding: 120px 0px 60px 0px
 `;
 
 export const Wrapper = styled.div`

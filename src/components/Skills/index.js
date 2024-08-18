@@ -6,7 +6,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // position: relative;
   z-index: 1;
   align-items: center;
   padding: 90px 0px 60px 0px;
@@ -21,15 +20,13 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1350px;
   gap: 12px;
-  margin-top:30px;
+  margin-top: 30px;
 `
 
 const TitleContainer = styled.div`
   width: 100%;
-  // max-width: 1500px;
   text-align: center;
   position: relative;
-  // padding: 20px 0;
 
   &::before,
   &::after {
@@ -62,7 +59,7 @@ const Desc = styled.div`
   font-size: 18px;
   text-align: center;
   max-width: 600px;
-  padding-top:20px;
+  padding-top: 20px;
   color: ${({ theme }) => theme.text_primary};
 `;
 
@@ -83,6 +80,12 @@ const Skill = styled.div`
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   border-radius: 16px;
   padding: 18px 36px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: rgba(23, 92, 230, 0.25) 0px 8px 30px;
+  }
 `
 
 const SkillTitle = styled.h2`
@@ -112,6 +115,13 @@ const SkillItem = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.primary + 15};
+    color: ${({ theme }) => theme.white};
+    cursor: pointer;
+  }
 `
 
 const SkillImage = styled.img`

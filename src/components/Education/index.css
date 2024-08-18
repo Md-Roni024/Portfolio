@@ -27,8 +27,8 @@
 .education .timeline::after {
     content: '';
     position: absolute;
-    width: 2px;
-    background: #EF233C;
+    width: 3px;
+    background: #054916;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -94,8 +94,7 @@
     top: 44px;
     font-size: 18px;
     font-weight: 600;
-    color: #EF233C;
-    text-transform: uppercase;
+    color: #169b37;
     letter-spacing: 1px;
     z-index: 1;
 }

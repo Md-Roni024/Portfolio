@@ -80,7 +80,7 @@ const Exprience = () => {
                 <h4>W3 Engineers Ltd.</h4>
                 <p>
                     Gain hands-on exprience on different technologies like: HTML, CSS, JavaScript, Node.js, React.js, express.js, Django, Flask &
-                    & Scrapy.Scrapy.
+                    & Scrapy.Scrapy. I build some real project like: Airbnb clone, Django admin dashboard, Scrapy bot for grab data from website and flask backend with Jwt authentication.
                 </p>
               </div>
             </div>
