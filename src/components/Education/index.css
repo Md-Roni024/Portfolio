@@ -139,6 +139,10 @@
     margin: 0;
     font-size: 16px;
 }
+hr{
+    width: 1400px;
+}
+
 
 @media (max-width: 767.98px) {
     .education .timeline::after {

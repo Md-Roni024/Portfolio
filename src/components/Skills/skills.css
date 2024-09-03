@@ -1,0 +1,128 @@
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  align-items: center;
+  padding: 90px 0px 60px 0px;
+}
+
+.skills-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1350px;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+/* .title-container {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  color: #FFFFFF;
+} */
+
+/* .title-container::before,
+.title-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--text-primary);
+}
+
+.title-container::before {
+  top: 0;
+}
+
+.title-container::after {
+  bottom: 0;
+} */
+
+.skills-wrapper .title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: -10px 0px;
+}
+
+
+.skills-wrapper #desc {
+  font-size: 18px;
+  text-align: center;
+  max-width: 600px;
+  padding-top: 20px;
+  color: #FFFFFF;
+}
+
+.skills-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.skill {
+  width: 100%;
+  max-width: 500px;
+  background: var(--card);
+  border: 0.1px solid #854CE6;
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  border-radius: 16px;
+  padding: 18px 36px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill:hover {
+  transform: translateY(-8px);
+  box-shadow: rgba(23, 92, 230, 0.25) 0px 8px 30px;
+}
+
+.skill-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.skill-item {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  border: 1px solid var(--text-primary-light);
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.skill-item:hover {
+  background-color: var(--primary-light);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.skill-image {
+  width: 24px;
+  height: 24px;
+}

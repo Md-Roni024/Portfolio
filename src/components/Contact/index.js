@@ -22,9 +22,7 @@ function Footer() {
   return (
     <>
       <div className="contact-container" id="contact-container">
-        <hr/>
         <h1>Contact Info</h1>
-        <hr/>
         <div className="contact-content">
           <div className="social-links">
             <div className="social-link linkedin">

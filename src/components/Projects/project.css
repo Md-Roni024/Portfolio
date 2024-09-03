@@ -1,0 +1,107 @@
+/* Container styles */
+.container {
+    background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,100% 98%, 0 100%);
+    padding: 120px 0px 60px 0px;
+}
+
+/* Wrapper styles */
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1300px;
+    padding: 10px 0px 100px 0;
+    gap: 12px;
+    margin-top: 90px;
+}
+
+/* Title container styles */
+.title-container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.title-container::before,
+.title-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--text-primary);
+}
+
+.title-container::before {
+    top: 0;
+}
+
+.title-container::after {
+    bottom: 0;
+}
+
+/* Title styles */
+.title {
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Description styles */
+.desc {
+    font-size: 18px;
+    text-align: center;
+    max-width: 600px;
+    color: var(--white);
+}
+
+/* Toggle button group styles */
+.toggle-button-group {
+    display: flex;
+    border: 1.5px solid var(--primary);
+    color: var(--white);
+    font-size: 16px;
+    border-radius: 12px;
+    font-weight: 500;
+    margin: 22px 0px;
+}
+
+/* Toggle button styles */
+.toggle-button {
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.toggle-button.active {
+    background: var(--primary-50);
+}
+
+.toggle-button:hover {
+    background: var(--primary-8);
+}
+
+/* Divider styles */
+.divider {
+    width: 1.5px;
+    background: var(--primary);
+}
+
+/* Card container styles */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}

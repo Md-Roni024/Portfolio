@@ -1,164 +1,35 @@
-import React from 'react'
-import styled from 'styled-components'
-import { skills } from '../../data/constants'
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 1;
-  align-items: center;
-  padding: 90px 0px 60px 0px;
-`
-
-const Wrapper = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1350px;
-  gap: 12px;
-  margin-top: 30px;
-`
-
-const TitleContainer = styled.div`
-  width: 100%;
-  text-align: center;
-  position: relative;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: ${({ theme }) => theme.text_primary};
-  }
-
-  &::before {
-    top: 0;
-  }
-
-  &::after {
-    bottom: 0;
-  }
-`;
-
-const Title = styled.h2`
-  font-size: 42px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
-  margin: 0;
-  padding: 0 20px;
-`;
-
-const Desc = styled.div`
-  font-size: 18px;
-  text-align: center;
-  max-width: 600px;
-  padding-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-`;
-
-const SkillsContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  gap: 30px;
-  justify-content: center;
-`
-
-const Skill = styled.div`
-  width: 100%;
-  max-width: 500px;
-  background: ${({ theme }) => theme.card};
-  border: 0.1px solid #854CE6;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  border-radius: 16px;
-  padding: 18px 36px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: rgba(23, 92, 230, 0.25) 0px 8px 30px;
-  }
-`
-
-const SkillTitle = styled.h2`
-  font-size: 28px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
-  margin-bottom: 20px;
-  text-align: center;
-`
-
-const SkillList = styled.div`
-  display: flex;
-  justify-content: center; 
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 20px;
-`
-
-const SkillItem = styled.div`
-  font-size: 16px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 80};
-  border: 1px solid ${({ theme }) => theme.text_primary + 80};
-  border-radius: 12px;
-  padding: 12px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-
-  &:hover {
-    background-color: ${({ theme }) => theme.primary + 15};
-    color: ${({ theme }) => theme.white};
-    cursor: pointer;
-  }
-`
-
-const SkillImage = styled.img`
-  width: 24px;
-  height: 24px;
-`
+import React from 'react';
+import { skills } from '../../data/constants';
+import './skills.css';
 
 const Skills = () => {
   return (
     <div id="skills">
-      <Container>
-        <Wrapper>
-          <TitleContainer>
-            <Title>Skills</Title>
-          </TitleContainer>
-          <Desc>
-            Here are some of my skills on which I have been working on past 2 years.
-          </Desc>
-          <SkillsContainer>
-            {skills.map((skill) => (
-              <Skill key={skill.title}>
-                <SkillTitle>{skill.title}</SkillTitle>
-                <SkillList>
-                  {skill.skills.map((item) => (
-                    <SkillItem key={item.name}>
-                      <SkillImage src={item.image} alt={item.name} />
-                      {item.name}
-                    </SkillItem>
-                  ))}
-                </SkillList>
-              </Skill>
-            ))}
-          </SkillsContainer>
-        </Wrapper>
-      </Container>
+      <div className="skills-wrapper">
+        <hr/>
+          <h2 className="title">Skills</h2>
+        <hr/>
+        <div id="desc">
+          Here are some of my skills on which I have been working on past 2 years.
+        </div>
+        <div className="skills-container">
+          {skills.map((skill) => (
+            <div className="skill" key={skill.title}>
+              <h2 className="skill-title">{skill.title}</h2>
+              <div className="skill-list">
+                {skill.skills.map((item) => (
+                  <div className="skill-item" key={item.name}>
+                    <img src={item.image} alt={item.name} className="skill-image" />
+                    {item.name}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Skills
+export default Skills;
