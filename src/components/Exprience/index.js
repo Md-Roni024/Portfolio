@@ -75,24 +75,22 @@ const Exprience = () => {
           <div class="timeline">
             <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
               <div class="timeline-text">
-                <div class="timeline-date">July 2024 - </div>
-                <h2>Intern Software Engineer</h2>
-                <h4>W3 Engineers Ltd.</h4>
+                <div class="timeline-date">April 2023 - May 2023</div>
+                <h2>Industrial Attachment</h2>
                 <p>
-                    Gain hands-on exprience on different technologies like: HTML, CSS, JavaScript, Node.js, React.js, express.js, Django, Flask &
-                    & Scrapy.Scrapy. I build some real project like: Airbnb clone, Django admin dashboard, Scrapy bot for grab data from website and flask backend with Jwt authentication.
+                   Gain Industrial knowledge like: How to gather requiements, analysis requirements, workflow design, version controlling and product depolyment prcedure etc. and flask backend with Jwt authentication.
                 </p>
               </div>
             </div>
-            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+            {/* <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
               <div class="timeline-text">
                 <div class="timeline-date">April 2023 - May 2023</div>
                 <h2>Industrial Attachment</h2>
-                {/* <h4>Higher Secondary</h4> */}
+                <h4>Higher Secondary</h4>
                 <h4></h4>
                 <p> Gain Industrial knowledge like: How to gather requiements, analysis requirements, workflow design, version controlling and product depolyment prcedure etc.</p>
               </div>
-            </div>
+            </div> */}
             {/* <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
               <div class="timeline-text">
                 <div class="timeline-date">2010 - 2015</div>
