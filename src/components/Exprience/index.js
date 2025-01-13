@@ -82,27 +82,6 @@ const Exprience = () => {
                 </p>
               </div>
             </div>
-            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-              <div class="timeline-text">
-                <div class="timeline-date">October 2024 - December 2024</div>
-                <h2>ASP.NET Intern</h2>
-                <h4>BJIT Limited</h4>
-                <h4></h4>
-                <p> Completed a 3-month internship, gaining hands-on experience in C#, Console Application, and ASP.NET. Learned and applied project development guidelines, Scrum methodology, and teamwork practices.</p>
-              </div>
-            </div>
-            {/* <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-              <div class="timeline-text">
-                <div class="timeline-date">2010 - 2015</div>
-                <h2>Maisaid P.M.A.G High School</h2>
-                <h4>Secondary School</h4>
-                <p>
-                  I have completed my B.Sc in Engineering from BSMRSTU with CGPA 3.25 |
-                  Skills: Software Development · Front-End Development · Back-End
-                  Web Development · Full-Stack Development ·
-                </p>
-              </div>
-            </div> */}
             
           </div>
         </div>
