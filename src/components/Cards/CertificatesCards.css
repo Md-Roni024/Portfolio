@@ -1,0 +1,125 @@
+.card {
+    width: 330px;
+    height: 490px;
+    background-color: #171721;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
+    overflow: hidden;
+    padding: 26px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
+    filter: brightness(1.1);
+}
+
+.card:hover .button {
+    display: block;
+}
+
+.image {
+    width: 100%;
+    height: 180px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
+}
+
+.tags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #854CE6;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px 2px;
+}
+
+.details .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    overflow: hidden;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.date {
+    font-size: 12px;
+    margin: 15px 0px 0px 2px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+
+.description {
+    font-weight: 400;
+    color: #FFFFFF;
+    overflow: hidden;
+    margin-top: 8px;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.members {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-left: -10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #171721;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #854CE6;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+}

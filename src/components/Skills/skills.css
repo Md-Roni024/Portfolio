@@ -4,7 +4,7 @@
   justify-content: center;
   z-index: 1;
   align-items: center;
-  padding: 90px 0px 60px 0px;
+  padding: 50px 0px 60px 0px;
 }
 
 .skills-wrapper {
@@ -19,37 +19,11 @@
   margin-top: 30px;
 }
 
-/* .title-container {
-  width: 100%;
-  text-align: center;
-  position: relative;
-  color: #FFFFFF;
-} */
-
-/* .title-container::before,
-.title-container::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: var(--text-primary);
-}
-
-.title-container::before {
-  top: 0;
-}
-
-.title-container::after {
-  bottom: 0;
-} */
-
 .skills-wrapper .title {
   text-align: center;
   font-size: 42px;
   font-weight: 600;
   color: #FFFFFF;
-  margin: -10px 0px;
 }
 
 
@@ -90,8 +64,8 @@
   font-size: 28px;
   font-weight: 600;
   color: var(--text-secondary);
-  margin-bottom: 20px;
   text-align: center;
+  
 }
 
 .skill-list {

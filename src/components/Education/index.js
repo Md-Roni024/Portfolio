@@ -16,7 +16,7 @@ const Education= () => {
           <div class="timeline">
             <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
               <div class="timeline-text">
-                <div class="timeline-date">January 2019 - March 2024</div>
+                <div class="timeline-date">January 2019 -Sep 2024</div>
                 <h2>Bangabandhu Sheikh Mujibur Rahman Science & Technology University</h2>
                 <h4>Bachelor Of Engineering(Hons.)-Computer Science</h4>
                 <p>

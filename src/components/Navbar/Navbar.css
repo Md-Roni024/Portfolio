@@ -1,0 +1,131 @@
+.nav {
+    background-color: var(--card-light);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    padding: 0 24px;
+    max-width: 1200px;
+    z-index: 1;
+}
+.nav-logo {
+    width: 100%;
+    padding: 0 6px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+.nav-logo svg {
+    margin-right: 8px;
+}
+.mobile-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 12px 40px 24px 40px;
+    background: var(--card-light);
+    transition: all 0.6s ease-in-out;
+    transform: translateY(-100%);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    z-index: -1000;
+}
+
+.mobile-menu.open {
+    transform: translateY(0);
+    opacity: 100%;
+    z-index: 1000;
+}
+
+.mobile-link {
+    color: var(--text-primary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.mobile-link:hover {
+    color: var(--primary);
+}
+
+.nav-items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-left: 100px;
+    padding: 0 6px;
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--white);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+.github-button {
+    border: 1.8px solid var(--text-primary);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 70%;
+    border-radius: 20px;
+    color: var(--primary);
+    cursor: pointer;
+    padding: 0 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.github-button:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.button-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    align-items: center;
+    padding: 0 6px;
+}
+
+.span {
+    padding: 0 4px;
+    font-weight: bold;
+    font-size: 18px;
+}

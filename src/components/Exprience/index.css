@@ -5,7 +5,7 @@
     position: relative;
     z-index: 1;
     align-items: center;
-    padding: 200px 0px 60px 0px;
+    padding: 35px 0px 60px 0px;
     color:#FFFFFF;
 }
 #title {
@@ -19,7 +19,6 @@
 .exprience .timeline {
     position: relative;
     width: 1350px;
-    /* width: 100%; */
     padding-top: 40px;
 }
 

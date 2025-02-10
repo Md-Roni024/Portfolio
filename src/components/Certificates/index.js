@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import ProjectCard from '../Cards/ProjectCards';
 import { certificates } from '../../data/constants';
 import CertificatesCards from '../Cards/CertificateCard';
-import './certificates.css';  // Import the external CSS
+import './certificates.css';
 
 const Certificates = ({ openModal, setOpenModal }) => {
   const [toggle, setToggle] = useState('web app');
