@@ -71,9 +71,9 @@ function Footer() {
       </div>
 
       <div className="footer-copyright">
-        <p>&copy; 2024 Md. Roni. All rights reserved.</p>
+        <p>&copy; 2025 Md. Roni. All rights reserved.</p>
         <div className="footer-links">
-          <a href={`mailto:${Bio.email}`} className="email" target="_blank">
+          <a href={`mailto:roni.cse024@gmail.com`} className="email" target="_blank">
             <i className="fa-solid fa-envelope"></i>
           </a>
           <a href={Bio.linkedin} className="linkedin" target="_blank">
